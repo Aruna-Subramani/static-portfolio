@@ -1,0 +1,10 @@
+version: 0.0
+os: ubuntu
+files:
+  - source: /index.html
+    destination: /var/www/html/
+hooks:
+  ApplicationStop:
+    - location: scripts/stop_server.sh
+      timeout: 300
+      runas: root
