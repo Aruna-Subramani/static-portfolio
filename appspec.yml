@@ -3,15 +3,3 @@ os: ubuntu
 files:
   - source: /index.html
     destination: /var/www/html/
-hooks:
-  BeforeInstall:
-    - location: scripts/install_dependencies.sh
-      timeout: 300
-      runas: root
-    - location: scripts/apache_start.sh
-      timeout: 300
-      runas: root
-  ApplicationStop:
-    - location: scripts/stop_server.sh
-      timeout: 300
-      runas: root
