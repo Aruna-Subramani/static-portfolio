@@ -7,8 +7,10 @@ phases:
   build :
     commands:
       - echo "we are in build phase"
-      - grep -Fq "aruna" index.html
   post_build:
     commands:
       - echo "we are in post-build stage"
+artifacts:
+  files: 
+    - '**/*'
       
