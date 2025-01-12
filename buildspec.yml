@@ -3,15 +3,17 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - echo "we are in pre-build phase"
-  build :
+      - echo "We are in the pre-build phase"
+  build:
     commands:
-      - echo "we are in build phase"
+      - echo "We are in the build phase"
   post_build:
     commands:
-      - grep -Fq "aruna" index.html
-      - echo "we are in post-build stage"
+      - echo "Checking for the string 'aruna' in index.html"
+      - grep -Fq "aruna" index.html || { echo "String 'aruna' not found. Failing the build."; exit 1; }
+      - echo "String 'aruna' found. Proceeding with the post-build phase."
+
 artifacts:
-  files: 
+  files:
     - '**/*'
-      
+
