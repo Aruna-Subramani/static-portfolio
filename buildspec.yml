@@ -16,4 +16,5 @@ phases:
 artifacts:
   files:
     - '**/*'
+  name: portfolio-$(date +%Y-%m-%d) 
 
