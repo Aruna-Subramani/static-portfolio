@@ -10,7 +10,7 @@ phases:
   post_build:
     commands:
       - echo "Checking for the string 'aruna' in index.html"
-      - grep -qi "aruna" index.html || { echo "String 'aruna' not found. Failing the build."; exit 0; }
+      - grep -qi "aruna" index.html || { echo "String 'aruna' not found. Failing the build."; exit 1; }
       - echo "String 'aruna' found. Proceeding with the post-build phase."
 
 artifacts:
