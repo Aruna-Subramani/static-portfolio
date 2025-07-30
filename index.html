@@ -3,118 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aruna Subramani - Portfolio</title>
+    <title>ARUNA SUBRAMANI</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+            color: #374151; /* Darker gray for text */
+        }
+        .section-heading {
+            border-bottom: 2px solid #e5e7eb; /* Light gray border for separation */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            color: #1f2937; /* Even darker gray for headings */
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.75rem; /* Rounded corners */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .list-item::before {
+            content: '•';
+            color: #4f46e5; /* Indigo dot */
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    </style>
 </head>
-<body>
+<body class="antialiased">
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8 max-w-4xl">
 
-    <header>
-        <h1>Aruna Subramani</h1>
-        <p>AWS Certified Solutions Architect- Associate</p>
-    </header>
+        <!-- Header Section -->
+        <header class="text-center mb-8">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-2">My Professional Portfolio</h1>
+            <p class="text-lg sm:text-xl text-gray-600">AWS Certified Solutions Architect & Cloud Enthusiast</p>
+        </header>
 
-    <section>
-        <h2>Professional Summary</h2>
-        <p>A highly motivated AWS certified Solutions Architect with over two years of experience in software testing and quality assurance. Adept at identifying bugs and issues to ensure the delivery of high-quality software products. Experienced in performing smoke, regression, and sanity testing. Having worked in a startup environment, gained exposure to AWS cloud services to create test environments and manage deployments. Demonstrated ability to work in dynamic and fast-paced environments while maintaining a focus on customer satisfaction and software quality.</p>
-    </section>
+        <!-- Professional Summary Section -->
+        <section class="card">
+            <h2 class="text-2xl font-semibold section-heading">Professional Summary</h2>
+            <p class="text-gray-700 leading-relaxed">
+                A highly motivated AWS certified Solutions Architect with hands-on experience in designing and deploying scalable, secure and highly available cloud architecture. Skilled in leveraging AWS services, Infrastructure as Code (IaC), and CI/CD tools to develop reliable, innovative solutions that meet business needs. Resilient and solutions-driven, with startup experience in creating test environments, managing deployments, and optimizing cloud operations.
+            </p>
+        </section>
 
-    <section>
-        <h2>Technical Skills</h2>
-        <h3>Tools</h3>
-        <ul>
-            <li>JIRA</li>
-            <li>Postman (Basic)</li>
-        </ul>
-        <h3>Cloud Platforms</h3>
-        <ul>
-            <li>EC2</li>
-            <li>S3</li>
-            <li>RDS</li>
-             <li>ALB</li>
-             <li>ASG</li>
-             <li>VPC</li>
-             <li>IAM</li>
-        </ul>
-        <h3>DevOps Tools</h3>
-        <ul>
-            <li>GitHub</li>
-            <li>AWS CodePipeline</li>
-            <li>AWS CodeDeploy</li>
-            <li>AWS CodeBuild</li>
-            <li>Terraform</li>
-        </ul>
-        <h3>Languages</h3>
-        <ul>
-            <li>Python</li>
-            <li>Bash</li>
-            <li>SQL</li>
-            <li>HTML</li>
-        </ul>
-    </section>
+        <!-- Technical Skills Section -->
+        <section class="card">
+            <h2 class="text-2xl font-semibold section-heading">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-gray-700">
+                <div>
+                    <h3 class="font-medium text-lg text-gray-800 mb-1">Cloud Services:</h3>
+                    <ul class="list-none pl-4">
+                        <li class="list-item">EC2, S3, RDS, ALB, ASG, VPC, IAM</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-medium text-lg text-gray-800 mb-1">Infrastructure as Code:</h3>
+                    <ul class="list-none pl-4">
+                        <li class="list-item">Terraform</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-medium text-lg text-gray-800 mb-1">DevOps Tools:</h3>
+                    <ul class="list-none pl-4">
+                        <li class="list-item">GitHub, AWS CodePipeline, AWS CodeDeploy, AWS CodeBuild</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-medium text-lg text-gray-800 mb-1">Programming & Scripting Languages:</h3>
+                    <ul class="list-none pl-4">
+                        <li class="list-item">Python, Bash, SQL</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-medium text-lg text-gray-800 mb-1">Operating Systems:</h3>
+                    <ul class="list-none pl-4">
+                        <li class="list-item">Windows, Linux</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    <section>
-        <h2>Work Experience</h2>
-        <div>
-            <h3>Software Test Engineer</h3>
-            <p>DevXpo Technologies and Services Pvt Ltd, Chennai (October 2015 to December 2017)</p>
-            <ul>
-                <li>Analysed business requirements and created test plans, test cases, and RTM.</li>
-                <li>Conducted manual testing of web and mobile applications across multiple browsers and platforms to ensure functionality and usability.</li>
-                <li>Performed various types of testing, including functional, regression, smoke, and sanity testing.</li>
-                 <li>Logged, tracked, and managed defects using JIRA and worked closely with the development team to resolve issues.</li>
-                <li>Coordinated User Acceptance Testing (UAT) with business stakeholders.</li>
-                <li>Worked with cross-functional teams to ensure seamless integration and quality assurance.</li>
-                <li>Gained exposure to AWS services such as EC2 during the project lifecycle, contributing to cloud infrastructure setup and troubleshooting.</li>
+        <!-- Work Experience Section -->
+        <section class="card">
+            <h2 class="text-2xl font-semibold section-heading">Work Experience</h2>
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-gray-800">Software Test Engineer, DevXpo Technologies and Services Pvt Ltd</h3>
+                <p class="text-gray-600 text-sm mb-2">Chennai | October 2015 to December 2017</p>
+                <ul class="list-none pl-4 text-gray-700 leading-relaxed">
+                    <li class="list-item">Analyzed business requirements and prepared detailed test cases to ensure high test coverage and defect detection.</li>
+                    <li class="list-item">Conducted manual testing of web and mobile applications across multiple browsers and platforms.</li>
+                    <li class="list-item">Logged, tracked, and managed defects using JIRA and worked closely with cross-functional team to resolve issues.</li>
+                    <li class="list-item">Gained hands-on experience with AWS services by setting up test environments and troubleshooting cloud infrastructure issues.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Personal Cloud Projects Section -->
+        <section class="card">
+            <h2 class="text-2xl font-semibold section-heading">Personal Cloud Projects</h2>
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-gray-800">AWS Scalable WordPress Deployment (E-commerce website)</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    Designed and deployed a highly available and scalable e-commerce website using WordPress and automated the entire deployment process using Terraform. Utilized Application Load Balancer (ALB) to distribute incoming traffic across EC2 instances and Auto Scaling Group (ASG) to automatically scale based on traffic demands. Implemented robust security using VPC, Security Groups, and Subnet Management. For database management, integrated RDS (MySQL) to ensure scalability, availability, and reliability.
+                </p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold text-gray-800">CICD Pipeline for Portfolio Website</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    Implemented a CI/CD pipeline to automate build, test, and deployment processes. Integrated with GitHub for source control and configured automated deployments to EC2 instances upon code changes. Applied best practices for secure access management.
+                </p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="card">
+            <h2 class="text-2xl font-semibold section-heading">Education</h2>
+            <div class="mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">Master of Engineering in Communication Systems</h3>
+                <p class="text-gray-600 text-sm">2015 | 92.9%</p>
+                <p class="text-gray-700">Adhiyamaan College of Engineering, Hosur, India</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold text-gray-800">Bachelor of Engineering in Electronics & Communication</h3>
+                <p class="text-gray-600 text-sm">2013 | 86.2%</p>
+                <p class="text-gray-700">K.S.R College of Engineering, Tiruchengode, India</p>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="card">
+            <h2 class="text-2xl font-semibold section-heading">Certifications</h2>
+            <ul class="list-none pl-4 text-gray-700">
+                <li class="list-item">PCEP- Certified Entry-level Python Programmer - April 2025</li>
+                <li class="list-item">AWS Certified Solutions Architect – Associate - October 2024</li>
+                <li class="list-item">AWS Certified Cloud Practitioner - August 2024</li>
             </ul>
-        </div>
-    </section>
+        </section>
 
-    <section>
-        <h2>Personal Cloud Projects</h2>
-        <div>
-            <h3>AWS Scalable WordPress Deployment (E-commerce website)</h3>
-            <p>Designed and deployed an automated, scalable and highly available WordPress site using Terraform, AWS EC2, ALB, ASG, RDS, and VPC.</p>
-        </div>
-        <div>
-            <h3>CI/CD Pipeline for Portfolio Website</h3>
-            <p>Implemented an automated deployment pipeline using AWS CodePipeline, CodeBuild, and CodeDeploy, integrating with GitHub for version control.</p>
-        </div>
-    </section>
+        <!-- Competencies Section -->
+        <section class="card">
+            <h2 class="text-2xl font-semibold section-heading">Competencies</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 text-gray-700">
+                <ul class="list-none pl-4">
+                    <li class="list-item">Problem-solving</li>
+                    <li class="list-item">Eagerness to learn</li>
+                    <li class="list-item">Independent</li>
+                </ul>
+                <ul class="list-none pl-4">
+                    <li class="list-item">Attention to detail</li>
+                    <li class="list-item">Adaptability</li>
+                    <li class="list-item">Communication skills</li>
+                </ul>
+            </div>
+        </section>
 
-    <section>
-        <h2>Education</h2>
-        <div>
-            <h3>Master of Engineering in Communication Systems</h3>
-            <p>2015 | 92.9% | Adhiyamaan College of Engineering, Hosur, India</p>
-        </div>
-        <div>
-            <h3>Bachelor of Engineering in Electronics & Communication</h3>
-            <p>2013 | 86.2% | K.S.R College of Engineering, Tiruchengode, India</p>
-        </div>
-    </section>
+        <!-- Footer Section -->
+        <footer class="text-center text-gray-500 text-sm mt-8">
+            <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        </footer>
 
-    <section>
-        <h2>Certifications</h2>
-        <div>
-            <h3>AWS Certified Solutions Architect – Associate</h3>
-            <p>October 2024</p>
-        </div>
-         <div>
-            <h3>AWS Certified Cloud Practitioner</h3>
-            <p>August 2024</p>
-        </div>
-    </section>
-
-    <section>
-        <h2>Competencies</h2>
-        <ul>
-            <li>Problem-solving</li>
-            <li>Eagerness to learn</li>
-            <li>Independent</li>
-            <li>Attention to detail</li>
-            <li>Adaptability</li>
-            <li>Communication skills</li>
-        </ul>
-    </section>
-
+    </div>
 </body>
 </html>
